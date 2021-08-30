@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Credit Risk Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="status" placeholder="Status eg. 1"><br>
+                <input class="form-input" type="text" name="credit_history" placeholder="Credit History eg. 4"><br>
+                <input class="form-input" type="text" name="purpose" placeholder="Purpose  eg. 0"><br>
+                <input class="form-input" type="text" name="savings" placeholder="Savings  eg. 1"><br>
+                <input class="form-input" type="text" name="employment_duration" placeholder="Employment Duration eg. 2"><br>
+                <input class="form-input" type="text" name="installment_rent" placeholder="Installment Rate eg. 4"><br>
+                <input class="form-input" type="text" name="personal_status_sex" placeholder="Personal Staus Sex eg. 2"><br>
+                <input class="form-input" type="text" name="other_debtors" placeholder="Other Debtors eg. 1"><br>
+                <input class="form-input" type="text" name="present_residence" placeholder="Present Residence eg. 4"><br>
+                <input class="form-input" type="text" name="property" placeholder="Property eg. 2"><br>
+                <input class="form-input" type="text" name="housing" placeholder="Housing eg. 1"><br>
+                <input class="form-input" type="text" name="number_creditd" placeholder="Number of Credits eg. 2"><br>
+                <input class="form-input" type="text" name="job" placeholder="Job eg. 3"><br>
+                <input class="form-input" type="text" name="people_liable" placeholder="People Liable eg. 1"><br>
+                <input class="form-input" type="text" name="telephone" placeholder="Telephone eg. 1"><br>
+                <input class="form-input" type="text" name="foreign_worker" placeholder="Foreign Worker eg. 2"><br>
+                <input class="form-input" type="text" name="credit_risk" placeholder="Credit Risk eg. 1"><br>
+                <input class="form-input" type="text" name="log_amount" placeholder="Log of Amount eg. 6.96"><br>
+                <input class="form-input" type="text" name="log_age" placeholder="Log of Age eg. 3.04"><br>
+                <input class="form-input" type="text" name="log_duration" placeholder="Log of Duration eg. 2.89"><br>
+
+
+
+
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        
+       </div>
+
+    </body>
+</html>
